@@ -54,12 +54,9 @@ flowchart LR
     D -->|User Commands| C
     C --> B
 ```
-## Bots broadcast battery & formation status over BLE.
-
-## --Simulation runs in parallel, mirroring physical layout for testing.
-
-## --Orchestrator (global_control/orchestrator.py) steps both worlds and syncs commands.
-
-## --CLI (host_interface/cli.py) lets you check vitals or trigger “FORM” across bots/agents.
+- **Bots** broadcast battery & formation status over BLE.  
+- **Simulation** runs in parallel, mirroring physical layout for testing.  
+- **Orchestrator** (`global_control/orchestrator.py`) steps both worlds and syncs commands.  
+- **CLI** (`host_interface/cli.py`) lets you check vitals or trigger “FORM” across bots/agents.  
 
 
