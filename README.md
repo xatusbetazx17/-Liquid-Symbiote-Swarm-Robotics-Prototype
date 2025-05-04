@@ -42,15 +42,15 @@
 ```mermaid
 flowchart LR
     subgraph Physical Layer
-      A[ArduinoNano33BLE Bots]
+      A[Arduino Nano 33 BLE Bots]
       A -->|BLE Status| C[Global Control Node]
     end
     subgraph Virtual Layer
-      B[Python Simulation<br/>(Mesa Model)]
+      B["Python Simulation\n(Mesa Model)"]
       B -->|API| C
     end
     C[Global Control Node]
     C --> D[Host CLI]
     D -->|User Commands| C
     C --> B
-
+```
