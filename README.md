@@ -57,6 +57,30 @@ flowchart LR
 - **Bots** broadcast battery & formation status over BLE.  
 - **Simulation** runs in parallel, mirroring physical layout for testing.  
 - **Orchestrator** (`global_control/orchestrator.py`) steps both worlds and syncs commands.  
-- **CLI** (`host_interface/cli.py`) lets you check vitals or trigger “FORM” across bots/agents.  
+- **CLI** (`host_interface/cli.py`) lets you check vitals or trigger “FORM” across bots/agents.
 
+  ## 📦 Repository Layout
+
+```
+  liquid-symbiote-prototype/
+├── LICENSE
+├── README.md
+├── .gitignore
+├── firmware/
+│   └── ArduinoBots/
+│       ├── Bot.ino
+│       └── config.h
+├── simulation/
+│   ├── requirements.txt
+│   ├── agent.py
+│   └── model.py
+├── global_control/
+│   ├── orchestrator.py
+│   └── swarm_comm.py
+├── host_interface/
+│   ├── cli.py
+│   └── biometrics.py
+└── docs/
+    └── architecture.md
+```
 
